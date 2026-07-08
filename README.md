@@ -22,3 +22,30 @@ A production-ready task management web app with JWT authentication, CRUD operati
 - **AI Suggest**: type a rough title, click the button – Gemini generates a professional description and suggests priority.
 - Dark mode toggle (persisted in localStorage).
 - Fully responsive (mobile, tablet, desktop).
+
+## Project Structure
+backend/
+├── app/
+│ ├── api/v1/ # Auth, Tasks, AI endpoints
+│ ├── core/ # Config, DB, Security
+│ ├── models/ # SQLAlchemy models
+│ ├── schemas/ # Pydantic schemas
+│ ├── services/ # Business logic (Auth, Task, AI)
+│ ├── repositories/ # DB operations
+│ └── utils/ # Exception handlers
+├── .env # Environment variables
+└── requirements.txt
+
+frontend/
+├── src/
+│ ├── components/ # Reusable UI (Login, Signup, TaskList, TaskForm, etc.)
+│ ├── context/ # AuthContext, ThemeContext
+│ ├── pages/ # Dashboard, LoginPage, SignupPage
+│ ├── services/ # API calls (auth, tasks, ai)
+│ └── utils/ # Constants
+├── .env # REACT_APP_API_URL
+└── package.json
+
+### Prerequisites
+- Python 3.10+, Node.js 18+, npm, git.
+
