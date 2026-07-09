@@ -12,7 +12,7 @@ app = FastAPI(title="Task Manager API", version="1.0.0")
 # CORS – allow local development and deployed frontend
 app.add_middleware(
 	CORSMiddleware,
-	allow_origins=["http://localhost:3000", "https://your-frontend.vercel.app"],  # Update for production
+	allow_origins=["http://localhost:3000", "https://task-manager-app-vert-xi.vercel.app"],  # Update for production
 	allow_credentials=True,
 	allow_methods=["*"],
 	allow_headers=["*"],
